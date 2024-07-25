@@ -130,4 +130,4 @@ class InputManager
 
 // delegate 를 만들 때
 // 반환타입이 있는 경우 Func<> 를 활용해 만들 수 있음
-// 반환타입이 없으면 Acrion<> 를 사용
+// 반환타입이 없으면 Action<> 를 사용
