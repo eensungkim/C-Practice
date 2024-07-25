@@ -109,7 +109,7 @@ class MyDelegate
 class InputManager
 {
     public delegate void OnInputKey();
-    public event OnInputKey InputKey; // 외부에서 InputKey 에 += 함수명, -= 함수명 으로 구독하거나 취소할 수 있음.
+    public event OnInputKey? InputKey; // 외부에서 InputKey 에 += 함수명, -= 함수명 으로 구독하거나 취소할 수 있음.
     public void Update()
     {
         if (Console.KeyAvailable == false)
@@ -117,7 +117,7 @@ class InputManager
         ConsoleKeyInfo info = Console.ReadKey();
         if (info.Key == ConsoleKey.A)
         {
-            InputKey();
+            InputKey!();
         }
     }
 }

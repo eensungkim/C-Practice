@@ -82,7 +82,7 @@ class DictionaryStudy
             _dictionary.Add(i, i.ToString()); // Add 를 호출하고 key, value 를 전달하여 추가 가능
         }
 
-        string numberString;
+        string? numberString;
         // key 가 없는 경우 크래시가 나기 때문에, 마치 옵셔널을 쓰듯이 TryGetValue 와 out 을 조합하여 안전하게 가져올 수 있음.
         bool isNumber = _dictionary.TryGetValue(20000, out numberString);
 
